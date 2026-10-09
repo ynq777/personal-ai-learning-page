@@ -2,14 +2,95 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>个人AI学习主页</title>
 <style>
-body{font-family:system-ui;max-width:700px;margin:3rem auto;padding:0 20px;}
-h1{color:#1f2937;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family: "Microsoft YaHei", system-ui, sans-serif;
+  background-color: #f4f7fa;
+  color: #2d3748;
+  line-height:1.6;
+}
+.container{
+  max-width:900px;
+  margin:0 auto;
+  padding:40px 20px;
+}
+header{
+  text-align:center;
+  margin-bottom:40px;
+}
+h1{
+  font-size:2.2rem;
+  color:#2b6cb0;
+  margin-bottom:10px;
+}
+.subtitle{
+  color:#718096;
+  font-size:1.1rem;
+}
+.card-wrap{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap:20px;
+  margin-bottom:40px;
+}
+.card{
+  background:#fff;
+  padding:24px;
+  border-radius:14px;
+  box-shadow:0 2px 12px rgba(0,0,0,0.08);
+}
+.card h3{
+  color:#2b6cb0;
+  margin-bottom:12px;
+}
+.card p{
+  color:#4a5568;
+}
+footer{
+  text-align:center;
+  color:#a0aec0;
+  margin-top:50px;
+  font-size:0.9rem;
+}
 </style>
 </head>
 <body>
-<h1>个人AI学习主页</h1>
-<p>这是GitHub Pages静态演示页面。</p>
+<div class="container">
+  <header>
+    <h1>个人AI学习主页</h1>
+    <p class="subtitle">记录AI学习、工具实践与项目探索</p>
+  </header>
+
+  <div class="card-wrap">
+    <div class="card">
+      <h3>📚 学习笔记</h3>
+      <p>大模型基础、提示词工程、AI应用原理，持续整理学习心得。</p>
+    </div>
+    <div class="card">
+      <h3>🛠️ AI工具</h3>
+      <p>本地大模型、AIGC绘图、代码助手、AI音视频工具实践记录。</p>
+    </div>
+    <div class="card">
+      <h3>💻 项目实践</h3>
+      <p>小Demo、网页、自动化脚本，动手落地AI相关小项目。</p>
+    </div>
+    <div class="card">
+      <h3>📝 资源合集</h3>
+      <p>教程、文档、优质网站与开源项目链接收藏。</p>
+    </div>
+  </div>
+
+  <section class="card">
+    <h3>📌 关于本站</h3>
+    <p>这是使用GitHub Pages搭建的静态学习主页，用于存放个人AI学习资料与项目展示。后续会持续更新内容。</p>
+  </section>
+
+  <footer>
+    <p>© 2026 个人AI学习主页 | Powered by GitHub Pages</p>
+  </footer>
+</div>
 </body>
 </html>
